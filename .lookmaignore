@@ -1,4 +1,5 @@
 *
 
+!.gitignore
 !look-ma.json
 !*.ts
