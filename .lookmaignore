@@ -118,6 +118,7 @@ dist
 .babelrc.js
 .eslintignore
 .eslintrc.json
+.prettierignore
 package.json
 tsconfig.json
-yarn.log
+yarn.lock
