@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
-    "build": "4c build *.ts",
+    "build": "4c build . --no-copy-files -- --ignore node_modules,lib",
     "format": "4c format . './*'",
     "lint": "4c lint . './*'",
     "prepublishOnly": "yarn run build",
