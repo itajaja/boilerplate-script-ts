@@ -1,0 +1,4 @@
+language: typescript
+app: node lib/index.js
+imports:
+  - k8s
