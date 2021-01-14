@@ -123,6 +123,7 @@ imports/
 .eslintignore
 .eslintrc.json
 .prettierignore
+cdk8s.yaml
 package.json
 tsconfig.json
 yarn.lock
