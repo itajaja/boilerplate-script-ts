@@ -119,6 +119,7 @@ lib/
 .babelrc.js
 .eslintignore
 .eslintrc.json
+.gitignore
 .prettierignore
 package.json
 tsconfig.json
