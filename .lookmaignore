@@ -122,6 +122,7 @@ imports/
 .babelrc.js
 .eslintignore
 .eslintrc.json
+.gitignore
 .prettierignore
 cdk8s.yaml
 package.json
