@@ -13,5 +13,6 @@
     "prettier/prettier": "error",
     "global-require": "off",
     "import/no-dynamic-require": "off"
-  }
+  },
+  "root": true
 }
