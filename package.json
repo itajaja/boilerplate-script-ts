@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
-    "build": "4c build . --no-copy-files -- --ignore node_modules,lib",
+    "build": "rm -rf lib && tsc",
     "format": "4c format . './*'",
     "lint": "4c lint . './*'",
     "prepublishOnly": "yarn run build",
     "release": "4c release",
     "start": "node lib/index.js",
     "tdd": "jest --watch",
-    "test": "yarn lint && yarn typecheck && jest",
-    "testonly": "jest",
-    "typecheck": "tsc --noEmit"
+    "test": "yarn lint && yarn typecheck && yarn testonly",
+    "testonly": "jest --passWithNoTests",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tests"
   },
   "publishConfig": {
     "access": "public"
@@ -37,12 +37,11 @@
     "publishDir": "lib"
   },
   "devDependencies": {
-    "@4c/babel-preset": "^8.0.1",
     "@4c/cli": "^2.0.1",
     "@4c/jest-preset": "^1.4.5",
     "@4c/prettier-config": "^1.1.0",
     "@4c/tsconfig": "^0.3.1",
-    "@babel/preset-typescript": "^7.8.3",
+    "@types/jest": "^26.0.20",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
