@@ -4,8 +4,9 @@
     "rootDir": ".",
     "outDir": "lib",
     "target": "ES2015",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "types": ["jest", "node"]
   },
   "include": ["./**/*.ts", "./**/*.tsx"],
-  "exclude": ["lib", "node_modules", "tests"]
+  "exclude": ["lib", "node_modules"]
 }
