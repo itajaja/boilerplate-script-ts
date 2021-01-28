@@ -119,7 +119,6 @@ lib/
 dist/
 imports/
 
-.babelrc.js
 .eslintignore
 .eslintrc.json
 .gitignore
