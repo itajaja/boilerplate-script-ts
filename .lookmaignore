@@ -124,6 +124,4 @@ imports/
 .gitignore
 .prettierignore
 cdk8s.yaml
-package.json
 tsconfig.json
-yarn.lock
