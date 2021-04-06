@@ -120,6 +120,4 @@ lib/
 .eslintrc.json
 .gitignore
 .prettierignore
-package.json
 tsconfig.json
-yarn.lock
